@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="predict-page.css">
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Optimal Sleep Pattern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <h1 style="padding-left:40px; padding-top:20px; font-family: Montserrat; color:white; font-size: 20px;">Optimal Sleep</h1>
+    <h1 style="padding-left:40px; font-family: Montserrat; color:white; font-size: 20px;">Pattern Prediction:</h1>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" style="padding-top:250px; padding-left:130px;">
+          <div id="sleep-card">
+            <div id="sleep-card-content">
+              <div id="sleep-form-module">
+                  <p style="font-family:Montserrat ; padding-left:180px; padding-top:90px; color:white;font-size: 27px;">&nbsp;Go to bed at:&nbsp;</p>
+
+            </div>
+            <img class="moon-icon" src="Assets/moon-icon-white.png" alt="moon">
+          </div>
+          </div>
+        </div>
+        
+        <div class="col"style="padding-top:140px; padding-right:100px;">
+        <div id="awaken-card">
+          <div id="awaken-card-content">
+            <div id="awaken-card-title">
+              <h2>Predicted Awaken Data:</h2>
+            </div id="awaken-form-module">
+            <form method="post" class="form">
+              <label for="nap_total_freq" style="padding-top:13px">&nbsp;Number Of Naps:</label>
+              <input id="nap_total_freq" class="awaken-form-content" type="number" name="nap_total_freq" placeholder="... times" required />
+              <label for="nap_total_time" style="padding-top:23px">&nbsp;Total Nap Minutes:</label>
+              <input id="nap_total_time" class="awaken-form-content" type="number" name="nap_total_time" placeholder="... mins" required />
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col" style="padding-top:50px; padding-left:270px;">
+          <div class="buttons">
+            <button class="btn-hover color-1">Predict Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+
+</html>
